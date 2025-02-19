@@ -36,3 +36,6 @@ Docker container logs
 - Using UV as the dependency manager for faster package installation, allowing millisecond-level dependency installation on restart
 - Third-party dependencies can be installed following the official method: simply add required dependencies to `/docker/volumes/sandbox/dependencies/python-requirements.txt` and restart the sandbox
 - The image only contains FastAPI-related dependencies. Any additional dependencies you need must be manually added to python-requirements.txt
+
+使用paramiko模块时，连接本机无异常，连接其他服务器，会提示超时，可修改dify的docker-compose.yaml文件中sandbox的网络，将ssrf_proxy_network改为default
+![image](https://github.com/user-attachments/assets/cc6af092-00c1-41c5-bab1-52e95cc7d2e0)
