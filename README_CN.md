@@ -37,6 +37,7 @@ docker容器的日志
 - 第三方依赖安装与官方一致，将需要的依赖放入`/docker/volumes/sandbox/dependencies/python-requirements.txt`，重启sandbox即可。
 - 镜像只有fastapi相关的依赖，任何你需要的依赖，需要自己加到python-requirements.txt中。
 
-
+使用paramiko模块时，连接本机无异常，连接其他服务器，会提示超时，可修改dify的docker-compose.yaml文件中sandbox的网络，将ssrf_proxy_network改为default
+![image](https://github.com/user-attachments/assets/cc6af092-00c1-41c5-bab1-52e95cc7d2e0)
 
 
